@@ -1,0 +1,63 @@
+.filterSection {
+  opacity: 1;
+}.inactiveFilter {
+  opacity: .5;
+}
+*:focus {
+  outline: 0;
+}
+
+.shopify-buy__quantity-container {
+  width: 40%;
+  float: left;
+  margin-right: 10%;
+}
+
+.visuallyhidden {
+  display: none;
+}
+
+.shopify-buy__btn--seamless {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.07);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.07);
+  border: none;
+  font-weight: bold;
+}
+
+.shopify-buy__btn {
+  background: #000;
+  border-radius: 999px;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .3s ease, color .3s ease;
+}
+
+.shopify-buy__quantity {
+  float: left;
+  width: calc(95% - 80px);
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
